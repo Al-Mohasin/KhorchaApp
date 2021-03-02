@@ -1,0 +1,601 @@
+/*====================================
+Template Name:Future
+Author: Mohasin
+Email: almohasinmollah1983@gmail.com
+File: scss
+====================================*/
+/* color start */
+:root {
+    --bc1: #6f42c1;
+    --bc2: #112233;
+}
+
+:root {
+    /* --fn1: "Raleway", sans-serif; */
+    /* --fn2: "Poppins", sans-serif; */
+    --fn1: "Cairo", sans-serif;
+    --fn2: "Open sans", sans-serif;
+}
+
+:root {
+    --fc1: #bbb;
+    --fc2: #555;
+}
+
+::-moz-selection {
+    background: var(--bc1);
+    color: #fff;
+}
+
+::selection {
+    background: var(--bc1);
+    color: #fff;
+}
+
+/* color end =*/
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+body {
+    font-family: var(--fn2) !important;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fn1) !important;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+img {
+    border: 0px;
+    vertical-align: middle;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* common css ends */
+/* ========================================================================== */
+/* Alert Message css start */
+.session_success {
+    display: inline-block;
+    height: 55px;
+    font-family: var(--fn2);
+    color: var(--bc1);
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+    /* border-radius: 0 !important; */
+    border: 2px solid var(--bc1);
+    border-radius: 100px !important;
+    /* background: var(--bc1); */
+}
+
+.session_unsuccess {
+    display: inline-block;
+    height: 55px;
+    font-family: var(--fn2);
+    color: var(--bc2);
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+    /* border-radius: 0 !important; */
+    border: 2px solid var(--bc2);
+    border-radius: 100px !important;
+    /* background: var(--bc2); */
+}
+
+.session_delete {
+    display: inline-block;
+    border: 2px solid var(--bc2);
+    height: 55px;
+    font-family: var(--fn2);
+    color: var(--bc2);
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.error_text {
+    font-weight: 600;
+    font-family: var(--fn1);
+    color: var(--bc1) !important;
+    font-style: italic;
+}
+
+.error_message {
+    font-family: var(--fn2);
+    color: var(--bc1);
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Alert Message css end */
+/* ========================================================================== */
+/* Sweetalert2 css start */
+.swal2-popup {
+    border-radius: 200px !important;
+    border: 2px solid var(--bc1) !important;
+    box-shadow: 0px 0px 20px 2px rgba(111, 66, 193, 0.9) !important;
+}
+
+.swal2-styled.swal2-cancel,
+.swal2-styled.swal2-confirm {
+    border-radius: 100px !important;
+    text-transform: uppercase;
+    font-family: var(--fn1);
+    font-size: 14px !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background: var(--bc2) !important;
+}
+
+.swal2-styled.swal2-cancel {
+    background: var(--bc1) !important;
+}
+
+.swal2-html-container {
+    color: red;
+}
+
+/* Sweetalert2 css end */
+/* ========================================================================== */
+/* myButton css start */
+.myLoginButton {
+    border-radius: 100px;
+}
+
+.forgotPassword {
+    color: brown;
+}
+
+.page_heading {
+    word-spacing: 4px;
+}
+
+/* background: rgba(111, 66, 193, 0.3); */
+.myButtonBig {
+    font-family: var(--fn1);
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: var(--bc2);
+    padding: 5px 20px;
+    border: 0;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    /* outline: 3px solid rgba(111, 66, 193, 0.6); */
+    /* outline-offset: 4px; */
+    border-radius: 100px;
+    position: relative;
+    border: 3px solid var(--bc2);
+}
+
+.myButtonBig::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 100px;
+    border: 4px solid #fff;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+}
+
+.myButtonBig:hover::before {
+    border-color: var(--bc1);
+}
+
+.myButtonSmall {
+    background: var(--bc2);
+    font-family: var(--fn1);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff !important;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    border: 0;
+    padding: 0px 10px !important;
+    line-height: 22px;
+    margin: 5px !important;
+    cursor: pointer;
+    display: inline-block !important;
+    /* outline: 2px solid rgba(111, 66, 193, 0.6); */
+    /* outline-offset: 3px; */
+    border-radius: 50px;
+    position: relative;
+    border: 2px solid var(--bc2);
+}
+
+.myButtonSmall::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+}
+
+.myButtonSmall:hover::before {
+    border-color: var(--bc1);
+}
+
+.myButtonSmall:hover,
+.myButtonBig:hover {
+    background: var(--bc1) !important;
+    color: #fff !important;
+    border-color: var(--bc1);
+}
+
+.myButtonSmall:focus,
+.myButtonBig:focus {
+    outline: 0;
+}
+
+.myButtonBig i {
+    margin-right: 8px;
+}
+
+.my_delete_button {
+    background: brown;
+}
+
+/* myButton css end */
+/* ========================================================================== */
+/* Card, Table & Form css start */
+.card {
+    /* -webkit-box-shadow: -2px -2px 12px 1px rgba(0, 0, 0, 0.4) !important; */
+    /* box-shadow: -3px -3px 15px 1px rgba(0, 0, 0, 0.3) !important; */
+    box-shadow: -2px -2px 12px 1px rgba(111, 66, 193, 0.4) !important;
+    /* padding: 30px 15px; */
+}
+
+.card-subtitle {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #777 !important;
+}
+
+.dm_counter {
+    font-family: var(--fn2) !important;
+    color: var(--bc1);
+    text-align: right;
+    display: block;
+    font-weight: 700;
+}
+
+.card-header {}
+
+.card-header .card-title {
+    font-family: var(--fn1);
+    font-size: 20px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 0px !important;
+    text-align: center;
+}
+
+table {
+    border-left: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+    margin-bottom: 0 !important;
+}
+
+table thead,
+table tfoot {
+    background: var(--bc2);
+    border-left: 1px solid var(--bc2) !important;
+    border-right: 1px solid var(--bc2) !important;
+}
+
+table th {
+    color: #eee;
+    font-family: var(--fn1);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    /* text-align: center; */
+    border-right: 1px solid #777 !important;
+}
+
+table td {
+    border-top: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+    font-family: var(--fn2);
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    vertical-align: middle !important;
+    /* text-align: center; */
+}
+
+table td:last-child, table th:last-child {
+    border-right: 0 !important;
+}
+
+table .table_image {
+    height: 50px;
+}
+
+.form-control {
+    line-height: 24px;
+    border-radius: 0 !important;
+}
+
+span.advice {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.manage_badge {
+    text-align: left;
+}
+
+.manage_badge .outline_border {
+    outline: 2px solid rgba(111, 66, 193, 0.4);
+    outline-offset: 2px;
+    display: inline-block !important;
+}
+
+.manage_badge .outline_border:hover {
+    outline: 2px solid var(--bc1);
+}
+
+.manage_badge button,
+.manage_badge .badge {
+    border-radius: 2px !important;
+    margin: 1px;
+    padding: 4px 7px;
+    transition: all linear 0.1s;
+    -webkit-transition: all linear 0.1s;
+}
+
+.manage_badge button,
+.manage_badge .badge small {
+    font-family: var(--fn1);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.manage_badge .badge:hover {
+    background: var(--bc1);
+}
+
+.manage_badge button {
+    border: none;
+}
+
+.card-body label {
+    text-align: right;
+    font-family: var(--fn2);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--fc2);
+}
+
+input::placeholder {
+    color: #bbb !important;
+    font-size: 14px !important;
+}
+
+.show_hide_button {
+    color: var(--bc1);
+    border-color: var(--bc1) !important;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.show_hide_button:hover {
+    background: var(--bc1);
+}
+
+.card-body select:focus,
+.card-body input:focus {
+    box-shadow: none;
+    border: 1px solid var(--bc1);
+}
+
+.card-body .custom_view_table {}
+
+.card-body .custom_view_table tr td:first-child {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    width: 29%;
+}
+
+.card-body .custom_view_table tr td:last-child {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--fc2);
+    width: 70%;
+}
+
+.user_details_image,
+.upload_image {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+}
+
+.view_password_parent {
+    position: relative;
+}
+
+.view_password {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 90px;
+}
+
+.view_password button {
+    background: rgba(111, 66, 193, 0.3);
+    font-family: var(--fn2);
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+}
+
+.view_password button:hover {
+    background: var(--bc1);
+    color: #fff;
+}
+
+.view_password button i {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.btn-success {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* Card, Table & Form css ends */
+/* ========================================================================== */
+.my_breadcrumb li,
+.my_breadcrumb a {
+    color: #999;
+    font-family: var(--fn1);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.page-titles .breadcrumb .breadcrumb-item+.breadcrumb-item:before {
+    display: none;
+}
+
+.my_breadcrumb i {
+    font-size: 10px;
+    margin: 0px 7px;
+    color: #bbb;
+}
+
+.footer_link {
+    color: var(--bc1);
+    font-weight: 400;
+}
+
+.cropable_area {
+    width: 300px;
+}
+
+.myLogo {
+    height: 22px;
+}
+
+.topbar .navbar-header {
+    background: var(--bc2);
+}
+
+.user-profile .profile-img img {
+    border-color: #777 !important;
+    padding: 3px !important;
+}
+
+.logged_name {
+    font-family: var(--fn2) !important;
+    color: var(--fc1);
+    font-size: 16px;
+}
+
+.logged_role {
+    font-family: var(--fn2) !important;
+    color: var(--fc1);
+    font-size: 12px;
+}
+
+.left-sidebar,
+.sidebar-nav {
+    background: var(--bc2);
+}
+
+.sidebar-nav ul li a,
+.sidebar-nav>ul>li>a i {
+    color: var(--fc1);
+}
+
+.sidebar-nav>ul>li>a.active {
+    background: transparent;
+}
+
+.slimScrollBar {
+    background: red !important;
+    display: none !important;
+}
+
+/* .dm_counter {
+    font-family: var(--fn2) !important
+} */
+.page-item .page-link {
+    border-color: var(--bc2);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.page-item:hover .page-link {
+    background: var(--bc2);
+    color: #fff;
+}
+
+.page-item.active .page-link {
+    background-color: var(--bc1);
+    border-color: var(--bc1);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: 0 !important;
+}
+
+/* ========================================================================== */
+button {
+    /* border-radius: 0 !important; */
+    cursor: pointer !important;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    /* border-radius: 0 !important; */
+}
+
+/*========== END CSS ===========*/
